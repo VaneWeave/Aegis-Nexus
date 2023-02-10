@@ -1,2 +1,13 @@
-# Aegis-Nexus
-Aegis Nexus is a cutting-edge blockchain-based platform that provides a secure and decentralized storage solution for people's medical certificates. With Aegis Nexus, individuals can store their medical records and important health information in a tamper-proof and easily accessible manner. 
+# Sample Hardhat Project
+
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat run scripts/deploy.js
+```
