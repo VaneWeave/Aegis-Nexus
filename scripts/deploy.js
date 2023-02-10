@@ -5,6 +5,7 @@ async function main()
 {
   const Contract = await ethers.getContractFactory("AegisNexus");
   const contract = await Contract.deploy();
+  const [deployer] = await ethers.getSigners();
 
   await contract.deployed();
 
@@ -17,8 +18,9 @@ async function main()
     {
       console.log(err)
     }
-    console.log('Deployed', contract.address)
   })
+  
+  console.log('Deployed contract at:', contract.address)
 }
 
 main()

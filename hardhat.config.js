@@ -1,7 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require('dotenv').config()
 
-
 const DEPLOYER_KEY = process.env.DEPLOYER_KEY 
 const ENDPOINT_URL = process.env.ENDPOINT_URL
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
