@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AegisNexus",
+  "sourceName": "contracts/AegisNexus.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201da1955ac98e10838733d6cc21c8a18a08df0fa089747b64480edf09cdc2464364736f6c63430008110033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212201da1955ac98e10838733d6cc21c8a18a08df0fa089747b64480edf09cdc2464364736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
