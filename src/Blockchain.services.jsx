@@ -1,7 +1,7 @@
-import abi from './solidity/abis/contracts/voting.sol/pollSystem.json'
-import address from './solidity/abis/address.json'
+import abi from './abis/contracts/AegisNexus.sol/AegisNexus.json'
+import address from './abis/address.json'
 import { getGlobalState, setGlobalState } from './store'
-import ethers from 'ethers'
+const ethers = require('ethers')
 
 const { ethereum } = window.ethereum
 const contractAddress = address.address
