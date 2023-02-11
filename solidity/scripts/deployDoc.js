@@ -3,7 +3,7 @@ const fs = require('fs');
 
 async function main() 
 {
-  const Contract = await ethers.getContractFactory("AegisNexus");
+  const Contract = await ethers.getContractFactory("DocRepo");
   const contract = await Contract.deploy();
   const [deployer] = await ethers.getSigners();
 
@@ -12,7 +12,7 @@ async function main()
   console.log("Deploying contracts with the account:", deployer.address);
 
   const address = JSON.stringify({address : contract.address }, null, 4)
-  fs.writeFileSync('abis/address.json', address, 'utf8', (err) => 
+  fs.writeFileSync('abis/addressDoc.json', address, 'utf8', (err) => 
   {
     if (err) 
     {
