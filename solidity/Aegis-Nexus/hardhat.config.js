@@ -1,4 +1,4 @@
-require("@nomiclabs/hardhat-waffle");
+require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config({path: __dirname + '/AegisNexus.env'})
 
 const DEPLOYER_KEY = process.env.DEPLOYER_KEY 
