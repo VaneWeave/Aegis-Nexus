@@ -1,7 +1,7 @@
 window.CONTRACT = {
   address: '0x434e14686C05149dD4EBF5d1728a6611c917E19d',
   network: 'https://polygon-rpc.com/',
-  explore: 'https://polygonscan.com/',
+  explore: 'https://goerli.etherscan.io/',
   abi: [
     {
       anonymous: false,
