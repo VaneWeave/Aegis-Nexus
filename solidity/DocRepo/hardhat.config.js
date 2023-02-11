@@ -1,5 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
-require('dotenv').config()
+require('dotenv').config({path: __dirname + '/DocRepo.env'})
 
 const DEPLOYER_KEY = process.env.DEPLOYER_KEY 
 const ENDPOINT_URL = process.env.ENDPOINT_URL
