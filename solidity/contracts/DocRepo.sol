@@ -4,6 +4,8 @@ pragma solidity 0.8.17;
 
 contract DocRepo
 {
+    address public owner;
+
     struct Doc
     {
         uint id;
@@ -13,6 +15,11 @@ contract DocRepo
     }
 
     Doc[] public doctors;
+
+    constructor()
+    {
+        owner = msg.sender;
+    }
 
     function addDoc(uint _id, string memory _regState, string memory _phoneNum) public
     {
