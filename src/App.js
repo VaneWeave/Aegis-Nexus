@@ -4,8 +4,8 @@ import Home from "./Components/Home/Home"
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-import DoctorForms from "./Components/Doctors/DoctorForms";
-import PatientForms from "./Components/Patients/PatientForms";
+import Upload from "./Components/Upload/Upload";
+import Verify from "./Components/Verify/Verify";
 // import ipfs from "./ipfs";
 
 
@@ -19,8 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/doctorForms" element={<DoctorForms />} />
-          <Route path="/patientForms" element={<PatientForms />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/verify" element={<Verify />} />
         </Routes>
         <Footer />
 
