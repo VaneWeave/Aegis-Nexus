@@ -11,6 +11,8 @@ function Header() {
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
                 <li><Link to='/about'>About</Link></li>
+                <li><Link to='/upload'>Upload</Link></li>
+                <li><Link to='/verify'>Verify</Link></li>
                 {/* <li tabIndex={0}>
                     <a>
                     Parent
