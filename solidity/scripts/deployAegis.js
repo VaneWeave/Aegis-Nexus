@@ -12,7 +12,7 @@ async function main()
   console.log("Deploying contracts with the account:", deployer.address);
 
   const address = JSON.stringify({address : contract.address }, null, 4)
-  fs.writeFileSync('abis/address.json', address, 'utf8', (err) => 
+  fs.writeFileSync('abis/addressAegis.json', address, 'utf8', (err) => 
   {
     if (err) 
     {
