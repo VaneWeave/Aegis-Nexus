@@ -1,26 +1,15 @@
 {
-  "name": "aegis-nexus",
+  "name": "eth",
   "version": "1.0.0",
-  "description": "Aegis Nexus is a cutting-edge blockchain-based platform that provides a secure and decentralized storage solution for people's medical certificates. With Aegis Nexus, individuals can store their medical records and important health information in a tamper-proof and easily accessible manner.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Maverick7274/Aegis-Nexus.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Maverick7274/Aegis-Nexus/issues"
-  },
-  "homepage": "https://github.com/Maverick7274/Aegis-Nexus#readme",
   "dependencies": {
-    "web3": "^1.8.2"
+    "web3": "^1.7.0"
   },
-  "devDependencies": {
-    "tailwindcss": "^3.2.6"
-  }
+  "keywords": [],
+  "description": ""
 }
