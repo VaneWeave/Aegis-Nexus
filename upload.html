@@ -17,7 +17,6 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link href="./css/aos.min.css" rel="stylesheet" />
-    <link rel="icon" href="./assets/images/icon.png" />
     <title>Upload Document</title>
   </head>
 
@@ -39,8 +38,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <span class="home_text">Aegis</span>
-          -Nexus
+          <span class="home_text">Aegis</span>-Nexus
         </a>
         <button
           class="navbar-toggler"
@@ -64,9 +62,6 @@
             <li class="nav-item">
               <a class="nav-link" href="verify.html">Verify</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="delete.html">Delete</a>
-            </li>
           </ul>
           <div class="d-flex">
             <button
@@ -89,7 +84,7 @@
     </nav>
 
     <!-- Body -->
-    <div class="container">
+    <div class="container" style="height: 100vh;  display: flex; justify-content: center; align-items: center; width: 90%;">
       <div class="alert alert-danger d-none mt-2">
         Please download MetaMask at
         <a target="_blank" href="https://metamask.io/download">Metamask Site</a>
@@ -114,7 +109,7 @@
         </div>
 
         <!-- upload form -->
-        <div data-aos="zoom-in" class="col py-3 data-upload my-3">
+        <div data-aos="zoom-in" class="col py-3 data-upload my-3" style="display: flex;">
           <input
             onchange="get_Sha3()"
             id="doc-file"
@@ -234,11 +229,6 @@
     <i onclick="topFunction()" id="scroll-btn" class="fa-solid fa-angle-up"></i>
 
     <!-- contact us Button -->
-    <div>
-      <a href="mailto:devaloshe@gmail.com?subject=From Aegis-Nexus Site">
-        <i class="mail-us fa-solid fa-headset"></i>
-      </a>
-    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
