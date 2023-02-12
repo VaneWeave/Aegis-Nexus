@@ -1,31 +1,16 @@
-const { ethers } = require("hardhat");
-const fs = require('fs');
+const Web3 = require("web3");
+const { bytecode, abi } = require("../abis/contracts/AegisNexus.sol/AegisNexus.json");
 
-async function main() 
-{
-  const Contract = await ethers.getContractFactory("DocRepo");
-  const contract = await Contract.deploy();
-  const [deployer] = await ethers.getSigners();
+const provider = new Web3.providers.HttpProvider("https://goerli.infura.io/v3/908180dff7f94c5f8f520dd4b237193e");
+const web3 = new Web3(provider);
 
-  await contract.deployed();
+(async () => {
+  const accounts = await web3.eth.getAccounts();
+  console.log("Deploying contract from account", accounts[0]);
 
-  console.log("Deploying contracts with the account:", deployer.address);
+  const deploymentResult = await new web3.eth.Contract(abi)
+    .deploy({ data: bytecode })
+    .send({ from: accounts[0], gas: "1000000" });
 
-  const address = JSON.stringify({address : contract.address }, null, 4)
-  fs.writeFileSync('abis/address.json', address, 'utf8', (err) => 
-  {
-    if (err) 
-    {
-      console.log(err)
-    }
-  })
-  
-  console.log('Deployed contract at:', contract.address)
-}
-
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+  console.log("Contract deployed at address", deploymentResult.options.address);
+})();

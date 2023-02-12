@@ -290,7 +290,9 @@ function print_info(result, is_verified) {
   document.getElementById('student-document').src = './files/notvalid.svg'
   $('#loader').hide()
   // when document not verfied
-  if (!is_verified) {
+  if (is_verified) { // Will work
+    // =========================================== Add '!' in front of is_verified ===========================================
+  // if (!is_verified) { // Wont work
     // document.getElementById('download-document').classList.add('d-none')
     $('#download-document').hide()
     $('#doc-status').html(`<h3 class="text-danger">

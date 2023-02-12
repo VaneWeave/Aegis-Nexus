@@ -119,8 +119,6 @@ contract AegisNexus
 
 // DocReg.sol
 
-    address public owner;
-
     struct Doc
     {
         uint id;
@@ -130,11 +128,6 @@ contract AegisNexus
     }
 
     Doc[] public doctors;
-
-    constructor()
-    {
-        owner = msg.sender;
-    }
 
     function addDoc(uint _id, string memory _regState, string memory _phoneNum) public
     {
